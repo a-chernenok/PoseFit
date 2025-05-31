@@ -39,15 +39,19 @@ CHERNENOK OLEKSANDR
     * Ανοίξτε το Android Studio.
     * Επιλέξτε `File > Open`, πλοηγηθείτε στον φάκελο `PoseFit` (που κατεβάσατε στο βήμα 4.1) και επιλέξτε τον. Αφήστε το Android Studio να ολοκληρώσει τον συγχρονισμό του Gradle project.
 3.  **Ρυθμίσεις Backend API URL:**
-    * Η διεύθυνση του backend API ορίζεται στο `object Config` μέσα στο αρχείο `MainActivity.kt` το BASE_URL, το οποίο θα το αλλάξερε και θα βάλετε την τοπική σας διεύθυνση.
+    * Η εφαρμογή απαιτεί σύνδεση με ένα backend server για την αποθήκευση και ανάκτηση δεδομένων ασκήσεων.
+    * **Παρεχόμενος Server:** Ενα προ-διαμορφωμένο server για το backend. Δεν χρειάζεται να στήσετε τοπικά Apache/MySQL για την εφαρμογή.
+        * **URL Βάσης για τα Backend APIs:** `https://archontis.sites.sch.gr/posefit/`
+    * Εντοπίστε τη διεύθυνση του backend API στο `object Config` μέσα στο αρχείο `MainActivity.kt` (είναι στην αρχή).
     * **Διαδρομή Αρχείου:** `app/src/main/java/com.your_package_name/MainActivity.kt` (Αντικαταστήστε το `com.your_package_name` με το πραγματικό package name του project σας).
-    * Βεβαιωθείτε ότι το `BASE_URL` έχει οριστεί ως `http://*Η IP*/Posefit_backend/` (πχ. `http://192.168.1.204/posefit_backend/"`).
+    * **Αλλάξτε το `BASE_URL` στο:** `https://archontis.sites.sch.gr/posefit/`
+    * *(Σημείωση: Αφαιρέστε την αναφορά σε τοπική IP π.χ. `http://192.168.1.204/posefit_backend/` αν χρησιμοποιείτε τον παρεχόμενο server.)*
 
 ---
 
 ### **5. Οδηγίες Εκτέλεσης (How to Run)**
+1.  **Backend Server:** Βεβαιωθείτε ότι ο παρεχόμενος backend server είναι διαθέσιμος και λειτουργεί.
 
-1.  **Εκκινήστε το Backend:** Βεβαιωθείτε ότι το XAMPP backend (Apache και MySQL) είναι σε λειτουργία, όπως περιγράφεται στο `README` του `Posefit_backend`.
 2.  **Εκτέλεση της Εφαρμογής στο Android Studio:**
     * Στο Android Studio, επιλέξτε την επιθυμητή συσκευή (Android Emulator ή Φυσική Συσκευή) από το drop-down μενού στη γραμμή εργαλείων.
     * Πατήστε το πράσινο κουμπί `Run` για να ξεκινήσετε και να εγκαταστήσετε την εφαρμογή.
