@@ -88,7 +88,8 @@ data class ResultsResponse(
 )
 
 object Config {
-    const val BASE_URL = "http://192.168.1.204/posefit_backend/"
+    //    const val BASE_URL = "http://192.168.1.204/posefit_backend/"
+    const val BASE_URL = "https://archontis.sites.sch.gr/posefit/"
 }
 
 class MainActivity : ComponentActivity() {
